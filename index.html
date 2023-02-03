@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="/css//style.css">
+   <title>Document</title>
+</head>
+<body>
+   <div class="calculator">
+      <div class="calculator__body">
+         <div class="calculator__calc calc">
+            <h1>Compare Calculator</h1>
+            <div class="calc__item">
+               <div class="calc__text">Storage: <span class="storage__output"></span></div>
+               <input type="range" min="1" max="1000" value="100" step="1" class="storage__range">
+               <div class="calc__min-max">
+                  <div class="calc__num">0</div>
+                  <div class="calc__num">1000</div>
+               </div>
+            </div>
+            <div class="calc__item">
+               <div class="calc__text">Transfer: <span class="transfer__output"></span></div>
+               <input type="range" min="1" max="1000" step="0" value="200" class="transfer__range">
+               <div class="calc__min-max">
+                  <div class="calc__num">0</div>
+                  <div class="calc__num">1000</div>
+               </div>
+            </div>
+         </div>
+         <div class="calculator__graph graph">
+            <div class="graph__logos">
+               <div class="graph__item">
+                  <div class="graph__label">backblaze</div>
+                  <div class="graph__logo">
+                     <img src="/img/backblaze.png" alt="Logo">
+                  </div>
+               </div>
+               <div class="graph__item">
+                  <div class="graph__buttons">
+                     <div class="graph__label">bunny</div>
+                     <div class="graph__box">
+                        <label for="hdd" class="graph-label">HDD</label>
+                        <input id="hdd" class="graph-input" type="radio" value="hdd" name="group1" >
+                        <label for="ssd" class="graph-label">SSD</label>
+                        <input id="ssd" class="graph-input" type="radio" value="ssd" name="group1" checked>
+                     </div>
+                  </div>
+                  <div class="graph__logo">
+                     <img src="/img/bunny.png" alt="Logo">
+                  </div>
+               </div>
+               <div class="graph__item">
+                  <div class="graph__buttons">
+                     <div class="graph__label">scaleway</div>
+                     <div class="graph__box">
+                        <label for="multi" class="graph-label">Multi</label>
+                        <input id="multi" class="graph-input" type="radio"  value="multi" name="group2">
+                        <label for="single" class="graph-label">Single</label>
+                        <input id="single" class="graph-input" type="radio" checked value="single" name="group2">
+                     </div>
+                  </div>
+                  <div class="graph__logo">
+                     <img src="/img/scaleway.png" alt="Logo">
+                  </div>
+               </div>
+               <div class="graph__item">
+                  <div class="graph__label">vultr</div>
+                  <div class="graph__logo">
+                     <img src="/img/vultr.png" alt="Logo">
+                  </div>
+               </div>
+            </div>
+            <div class="graph__bars">
+               <div class="graph__bar">
+                  <span class="graph__progress backblaze-bar"></span>
+                  <span class="graph__output backblaze"></span><span>$</span>
+               </div>
+               <div class="graph__bar">
+                  <span class="graph__progress bunny-bar"></span>
+                  <span class="graph__output bunny"></span><span>$</span>
+               </div>
+               <div class="graph__bar">
+                  <span class="graph__progress scaleway-bar"></span>
+                  <span class="graph__output scaleway"></span><span>$</span>
+               </div>
+               <div class="graph__bar">
+                  <span class="graph__progress vultr-bar"></span>
+                  <span class="graph__output vultr"></span><span>$</span>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <script src="/js/script.js"></script>
+</body>
+</html>
